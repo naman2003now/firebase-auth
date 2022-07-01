@@ -11,6 +11,7 @@ function App() {
   const [secret, setSecret] = useState("");
   onAuthStateChanged(auth, async (currentUser) => {
     setUser(currentUser);
+    console.log(user.accessToken);
   });
 
   const logout = async () => {
